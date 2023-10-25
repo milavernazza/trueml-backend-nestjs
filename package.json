@@ -1,0 +1,43 @@
+{
+    "name": "trueml-backend-nestjs",
+    "version": "1.0.0",
+    "description": "A NestJS implementation to interact with the TrueAccord Recover API",
+    "main": "src/main.ts",
+    "scripts": {
+      "start": "nest start",
+      "start:dev": "nest start --watch",
+      "test": "jest",
+      "docker": "build -t trueml-backend-nestjs",
+      "test:watch": "jest --watch",
+      "test:cov": "jest --coverage",
+      "lint": "eslint \"{src,apps,libs,test}/**/*.{ts,tsx}\" --fix",
+      "format": "prettier --write \"src/**/*.ts\""
+    },
+    "dependencies": {
+      "@nestjs/common": "^7.0.0",
+      "@nestjs/core": "^7.0.0",
+      "@nestjs/platform-express": "^7.0.0",
+      "rxjs": "^6.5.5",
+      "reflect-metadata": "^0.1.13"
+    },
+    "devDependencies": {
+      "@nestjs/cli": "^7.0.0",
+      "@nestjs/schematics": "^7.0.0",
+      "@nestjs/testing": "^7.0.0",
+      "@types/jest": "^26.0.0",
+      "@types/node": "^14.0.0",
+      "eslint": "^7.0.0",
+      "jest": "^26.0.0",
+      "prettier": "^2.0.0",
+      "ts-jest": "^26.0.0",
+      "ts-loader": "^8.0.0",
+      "tslint": "^6.1.0",
+      "typescript": "^3.8.3"
+    },
+    "author": "",
+    "license": "MIT",
+    "engines": {
+      "node": "14.x"
+    }
+  }
+  
