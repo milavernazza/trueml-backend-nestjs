@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: trueml-backend-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: trueml-backend
+  template:
+    metadata:
+      labels:
+        app: trueml-backend
+    spec:
+      containers:
+      - name: trueml-backend
+        image: gcr.io/your-project-id/trueml-backend-nestjs:v1
+        ports:
+        - containerPort: 3000
